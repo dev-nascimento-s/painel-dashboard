@@ -1,0 +1,79 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painel de Controle</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Menu lateral -->
+      <aside class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+          <li>🏠 Início</li>
+          <li>📊 Relatórios</li>
+          <li>⚙️ Configurações</li>
+        </ul>
+      </aside>
+
+      <!-- Conteúdo principal -->
+      <main class="main">
+        <header class="header">
+          <h1>Seja Bem-vindo</h1>
+        </header>
+
+        <div class="filter-bar" style="margin-bottom: 2rem">
+          <label for="periodSelect" style="margin-right: 1rem">Período:</label>
+
+          <div
+            class="filter-tabs"
+            style="display: flex; gap: 1rem; margin-bottom: 2rem"
+          >
+            <button class="filter-btn active" data-period="7">
+              Últimos 7 dias
+            </button>
+            <button class="filter-btn" data-period="30">Últimos 30 dias</button>
+            <button class="filter-btn" data-period="365">
+              Últimos 12 meses
+            </button>
+          </div>
+        </div>
+
+        <section class="cards">
+          <div class="card">
+            <h3>Usuários</h3>
+            <p>1.245</p>
+          </div>
+          <div class="card">
+            <h3>Vendas</h3>
+            <p>R$ 23.870</p>
+          </div>
+          <div class="card">
+            <h3>Visitas</h3>
+            <p>12.345</p>
+          </div>
+        </section>
+
+        <section class="chart-section">
+          <canvas id="chart" width="400" height="200"></canvas>
+        </section>
+
+        <div class="chart-section" style="margin-top: 2rem">
+          <h3 style="margin-bottom: 1rem">Distribuição de Usuários</h3>
+          <canvas id="chartPie"></canvas>
+        </div>
+      </main>
+    </div>
+
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

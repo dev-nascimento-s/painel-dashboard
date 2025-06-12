@@ -1,0 +1,29 @@
+{
+  "7": {
+    "labels": ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"],
+    "data": [120, 190, 300, 250, 320, 400, 380],
+    "cards": {
+      "users": 1280,
+      "sales": 8230,
+      "visits": 4523
+    }
+  },
+  "30": {
+    "labels": ["Dia 1", "Dia 2", "Dia 3", "Dia 4", "Dia 5", "Dia 6", "Dia 7", "Dia 8", "Dia 9", "Dia 10"],
+    "data": [430, 340, 390, 410, 380, 420, 460, 390, 410, 450],
+    "cards": {
+      "users": 5530,
+      "sales": 38500,
+      "visits": 18920
+    }
+  },
+  "365": {
+    "labels": ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"],
+    "data": [3200, 2800, 3500, 4000, 4200, 4600, 5000, 5300, 4800, 4700, 4900, 5100],
+    "cards": {
+      "users": 74200,
+      "sales": 423000,
+      "visits": 210400
+    }
+  }
+}
